@@ -16,7 +16,7 @@ services:
     ports:
     - 3000:3000
     volumes:
-    - .:/opt/app
+    - .:/usr/local/bin/app
     networks:
     - walkthrough
     depends_on:
