@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+
+  walk-through-db:
+    image: mongo
+    volumes:
+    - ./data:/data/db
+    ports:
+      - 27017:27017
+    networks:
+    - walkthrough
+
+  walk-through-app:
+    build: .
+    ports:
+    - 3000:3000
+    volumes:
+    - .:/opt/app
+    networks:
+    - walkthrough
+    depends_on:
+    - walk-through-db
+
+networks:
+  walkthrough:
