@@ -1,4 +1,4 @@
 FROM node
 EXPOSE 3000
-WORKDIR /opt/app
+WORKDIR /usr/local/bin/app
 CMD npm start
