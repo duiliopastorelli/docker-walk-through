@@ -17,6 +17,7 @@ services:
     - 3000:3000
     volumes:
     - .:/usr/local/bin/app
+    working_dir: /usr/local/bin/app
     networks:
     - walkthrough
     depends_on:
