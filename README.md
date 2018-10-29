@@ -1,6 +1,5 @@
 # docker-walk-through
-This repo is functional to the article "Docker cli, dockerfile and 
-docker-compose from scratch".
+This repo is functional to the article "A little dive into Docker".
 
 For use this repo follow the following instructions:
 
